@@ -23,7 +23,7 @@ This class is part of the file Estimator.py and is used to create an instance of
 | Method   | Description |
 | --------- | --------------- |
 | `fit` | fit(self, data, max_depth)<br><br><b>Inputs:</b><br>data -  training dataset<br>max_depth - maximum allowable depth.<br><br><b>Function:</b> Fits the supplied data to the model.<br><br> |
-| `build_tree`	| build_tree(self, node, data, depth, max_depth)<br><br><b>Inputs:</b><br>data - training dataset available at the level (provided to node)<br>node - node reference where subtree will be attached via branch<br>depth - depth of the tree<br>max_depth - maximum allowable depth<b>Function:</b> Recursively creates tree and returns the node reference.<br><br> |
+| `build_tree`	| build_tree(self, node, data, depth, max_depth)<br><br><b>Inputs:</b><br>data - training dataset available at the level (provided to node)<br>node - node reference where subtree will be attached via branch<br>depth - depth of the tree<br>max_depth - maximum allowable depth<br><br><b>Function:</b> Recursively creates tree and returns the node reference.<br><br> |
 | `get_split_feature` | get_split_feature(self, data)<br><br><b>Function:</b> function to calculate gain ratios and return best feature.<br><br> | 
 | `calc_information_gain_ratio` | calc_information_gain_ratio(self, data, feature)<br><br><b>Function:</b> returns information gain ratio for the dataset splitted over the given feature. Invoked by get_split_feature.<br><br> | 
 | `predict_proba` | predict_proba(self, test_data)<br><br><b>Function:</b> returns probabilities of classes for all instances in test_data.<br><br> | 
