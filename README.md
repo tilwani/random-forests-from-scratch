@@ -5,7 +5,24 @@ This is an implementation of random forests from complete scratch in Python. Inc
 
 For implementation, following three classes are used to store the states of any random forest model.
 
-2.1.RandomForestModel: This is the class to be used while training the model. Each instance of this class stores estimators along with the total labels seen in the training data. This class is contained in the code file random_forest_classifier.py. Some of the important methods are as follows:
+1.RandomForestModel: This is the class to be used while training the model. Each instance of this class stores estimators along with the total 
+labels seen in the training data. This class is contained in the code file random_forest_classifier.py. Some of the important methods are as follows:
+
+| Method   | Description |
+| --------- | --------------- |
+| `fit` | fit(self, train_dataset, train_labels = None, target_column = None, n_estimators = 5, min_samples = 5, min_features = 2, max_features = None, max_depth = None) 
+
+Inputs:
+train_dataset - training dataset
+train_labels - labels for the training data as dataframe
+target_column - column of target labels in training dataset
+n_estimators - number of estimators to be trained
+min_samples - min allowable rows(data points) in a sample
+min_features - minimum allowable features to be included in a sample
+max_features - maximum allowable features to be included in a sample
+max_depth = maximum allowable depth of any estimator. |
+
+
 Method	Description
 fit	fit(self, train_dataset, train_labels = None, target_column = None, n_estimators = 5, min_samples = 5, min_features = 2, max_features = None, max_depth = None)
 
