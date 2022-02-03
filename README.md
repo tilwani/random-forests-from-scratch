@@ -10,9 +10,7 @@ labels seen in the training data. This class is contained in the code file rando
 
 | Method   | Description |
 | --------- | --------------- |
-| `fit` | fit(self, train_dataset, train_labels = None, target_column = None, n_estimators = 5, min_samples = 5, min_features = 2, max_features = None, max_depth = None) 
-
-Inputs:
+| `fit` | fit(self, train_dataset, train_labels = None, target_column = None, n_estimators = 5, min_samples = 5, min_features = 2, max_features = None, max_depth = None) \n Inputs:
 train_dataset - training dataset
 train_labels - labels for the training data as dataframe
 target_column - column of target labels in training dataset
