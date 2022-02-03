@@ -23,30 +23,11 @@ This class is part of the file Estimator.py and is used to create an instance of
 | Method   | Description |
 | --------- | --------------- |
 | `fit` | fit(self, data, max_depth)<br><br><b>Inputs:</b><br>data -  training dataset<br>max_depth - maximum allowable depth.<br><br><b>Function:</b> Fits the supplied data to the model. |
-| `build_tree`	| build_tree(self, node, data, depth, max_depth)<br><br><b>Inputs:</b><br>data - training dataset available at the level (provided to node)<br>node - node reference where subtree will be attached via branch<br>depth - depth of the tree<br>max_depth - maximum allowable depth<b>Function:</b> returns a random sample of data, to send to decision tree. |
-| `predict_proba` | predict_proba(self, test_data)<br><br><b>Function:</b> returns the probabilities of classes for all instances in test dataframe. Also referred when predict and predict_accuracy are called. | 
+| `build_tree`	| build_tree(self, node, data, depth, max_depth)<br><br><b>Inputs:</b><br>data - training dataset available at the level (provided to node)<br>node - node reference where subtree will be attached via branch<br>depth - depth of the tree<br>max_depth - maximum allowable depth<b>Function:</b> Recursively creates tree and returns the node reference |
+| `get_split_feature` | get_split_feature(self, data)<br><br><b>Function:</b> function to calculate gain ratios and return best feature. | 
+| `calc_information_gain_ratio` | calc_information_gain_ratio(self, data, feature)<br><br><b>Function:</b> returns information gain ratio for the dataset splitted over the given feature. Invoked by get_split_feature. | 
+| `predict_proba` | predict_proba(self, test_data)<br><br><b>Function:</b> returns probabilities of classes for all instances in test_data  | 
 
-
-Method	Description
-Function: 
-build_tree	
-
-Inputs:
-data - training dataset available at the level (provided to node)
-node - node reference where subtree will be attached via branch
-depth - depth of the tree
-max_depth - maximum allowable depth
-
-Function: Recursively creates tree and returns the node reference 
-get_split_feature	get_split_feature(self, data)
-
-Function: function to calculate gain ratios and return best feature.
-calc_information_gain_ratio	calc_information_gain_ratio(self, data, feature)
-
-Function: returns information gain ratio for the dataset splitted over the given feature. Invoked by get_split_feature.
-predict_proba	predict_proba(self, test_data)
-
-Function: returns probabilities of classes for all instances in test_data 
 Table 2: Main methods in DecisionTreeEstimator class
 
 ### 3. Node
