@@ -1,6 +1,8 @@
 # random-forests-from-scratch
 This is an implementation of random forests from complete scratch in Python. Includes many customized features to use.
 
+## Implementation Details
+
 For implementation, following three classes are used to store the states of any random forest model.
 
 2.1.RandomForestModel: This is the class to be used while training the model. Each instance of this class stores estimators along with the total labels seen in the training data. This class is contained in the code file random_forest_classifier.py. Some of the important methods are as follows:
