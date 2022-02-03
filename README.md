@@ -10,17 +10,17 @@ labels seen in the training data. This class is contained in the code file rando
 
 | Method   | Description |
 | --------- | --------------- |
-| `fit` | fit(self, train_dataset, train_labels = None, target_column = None, n_estimators = 5, min_samples = 5, min_features = 2, max_features = None, max_depth = None)
+| `fit` | fit(self, train_dataset, train_labels = None, target_column = None, n_estimators = 5, min_samples = 5, min_features = 2, max_features = None, max_depth = None)<br>
 Inputs:
-train_dataset - training dataset
-train_labels - labels for the training data as dataframe
-target_column - column of target labels in training dataset
-n_estimators - number of estimators to be trained
-min_samples - min allowable rows(data points) in a sample
-min_features - minimum allowable features to be included in a sample
-max_features - maximum allowable features to be included in a sample
-max_depth = maximum allowable depth of any estimator. 
-Function: Fits the supplied data to the model. |
+<br>train_dataset - training dataset
+<br>train_labels - labels for the training data as dataframe
+<br>target_column - column of target labels in training dataset
+<br>n_estimators - number of estimators to be trained
+<br>min_samples - min allowable rows(data points) in a sample
+<br>min_features - minimum allowable features to be included in a sample
+<br>max_features - maximum allowable features to be included in a sample
+<br>max_depth = maximum allowable depth of any estimator. 
+<br>Function: Fits the supplied data to the model. |
 | get_random_sample	| get_random_sample(self, train_dataset, min_samples, min_features, max_features) Function: returns a random sample of data, to send to decision tree. | 
 
 
